@@ -4,17 +4,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Imagens Dinâmicas</title>
+    <title>Mídias Html</title>
 </head>
 <body>
+    <h1>Imagens dinâminas</h1>
+    <p>Tente abri esse site em vários dispositivos diferentes.</p>
     <picture>
-        <img src="foto.jpg" alt="A imagem funciona">
+        <source media="(max-width: 750px)" srcset="imgP.png" type="image/png">
+        <source media="(max-width:1050px )" srcset="imgM.png" type="image/png"> 
+        <img src="imgG.png" alt="imagem flexivel">
     </picture>
-    <p></p>
-    <picture>
-        <source media="(max-width: 1050px)" srcset="foto.jpg" type="image/jpeg">
-        <img src="foto.jpg" alt="A imagem funciona">
-    </picture>
-    
 </body>
 </html>
